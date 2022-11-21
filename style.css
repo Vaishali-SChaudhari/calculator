@@ -1,0 +1,89 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, rgba(116, 70, 102, 0.903), rgba(143, 41, 4, 0.829));
+}
+
+.container {
+    /* border: 5px solid red; */
+    width: auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.calculator {
+    /* border: 5px solid rgb(18, 236, 6); */
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgb(247, 244, 244);
+}
+
+.display {
+
+    /* border: 2px solid rgb(236, 228, 12); */
+    margin: 0px 12px;
+    height: 100px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 25px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+
+}
+
+.input {
+    height: 60px;
+    width: 100%;
+    /* background-color: rgba(237, 221, 221, 0.326); */
+    font-size: 22px;
+    font-weight: 22px;
+    
+}
+
+.display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    /* border: 5px solid rgb(235, 67, 67); */
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgb(213, 212, 222);
+    /* border-radius: 30px; */
+    margin: 5PX;
+    font-size: 22px;
+    font-weight: 22px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+button#equal {
+    height: 130px;
+    
+    background-color: rgba(204, 198, 198, 0.988);
+}
+
+.calculator button.button {
+
+    color: black;
+    background-color: rgba(189, 248, 248, 0.784);
+}
+
+#operators {
+    
+    color: black;
+    background-color: rgba(231, 230, 190, 0.84);
+}
